@@ -1,0 +1,7 @@
+optimization { execution_accelerators {
+  gpu_execution_accelerator : [ {
+    name : "cuda"
+    parameters { key: "cudnn_conv_use_max_workspace" value: "0" }
+    parameters { key: "use_ep_level_unified_stream" value: "1" }}
+  ]
+}}
